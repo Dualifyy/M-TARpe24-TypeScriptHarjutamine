@@ -50,4 +50,4 @@ console.log(result.sort((aaaa,bbbb) => aaaa-bbbb))
 
 const unikaalsedArvud = new Set(mingidElemendid)
 const unikaalneArray = Array.from(unikaalsedArvud);
-console.log(unikaalneArray.sort((aaaa,bbbb) => aaaa-bbbb))
+console.log(unikaalneArray.sort((aaaaa,bbbbb) => aaaaa-bbbbb))
