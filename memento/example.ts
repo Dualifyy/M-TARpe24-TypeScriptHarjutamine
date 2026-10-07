@@ -76,13 +76,13 @@ class Hoolekandja {
         console.log(`Hoolekandja: Taastan oleku: ${memento.saaNimi}`)
     }
     public kuvaAjalugu(): void {
-        console.log(`Hoolekandja: siin on mementode nimekiri`) {
+        console.log(`Hoolekandja: siin on mementode nimekiri`) 
             for (const memento of this.mementod) {
                 console.log(memento.saaNimi());
             }
-        }
     }
 }
+
 
 const originaator = new Originaator("fucked");
 const hoolekandja = new Hoolekandja(originaator);
