@@ -1,1 +1,4 @@
 interface ComponentWithContextualHelp
+{
+    return;
+}
