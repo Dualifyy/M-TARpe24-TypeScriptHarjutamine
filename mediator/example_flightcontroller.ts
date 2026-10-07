@@ -47,3 +47,28 @@ class ReisiLennuk extends Lennuk {
         console.log("Õhkutõus toimumas")
     }
 }
+
+//Kaubalennuk
+class KaubaLennuk extends Lennuk {
+    public küsiMaandumisLuba(): void {
+        console.log("Kaubalennuk küsib maandumisluba");
+    }
+    public maandu(): void {
+        console.log("Kaubalennuk maandub w lennuk respect")   
+    }
+    public hoiaAsukohta(): void {
+        console.log("Kaubalennuk on paigal. ")
+    }
+}
+
+//kliendikood
+const reisiLennuk = new ReisiLennuk();
+const kaubaLennuk = new KaubaLennuk();
+
+const lennuJuhtimisTorn = new Lennujuhtimistorn(reisiLennuk, kaubaLennuk);
+
+console.log("Reisilennuk tahab õhku tõusta: ")
+reisiLennuk.küsiÕhkutõusuLuba();
+console.log("")
+console.log("Kaubalennuk tahab maandada: ")
+kaubaLennuk.küsiMaandumisLuba();
